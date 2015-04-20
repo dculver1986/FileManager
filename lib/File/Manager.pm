@@ -3,9 +3,6 @@
 use strict;
 use warnings;
 use Cwd qw(getcwd);
-use File::stat;
-use File::Find;
-use File::Slurp qw(read_dir);
 
 use Exporter;
 
