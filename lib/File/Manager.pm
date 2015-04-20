@@ -66,13 +66,12 @@ This module is free software; you can redistribute it and/or modify it under the
 
 =cut
 
-
 sub locate_all_files {
     my $path = shift;
 
-    my @dirs = split(/\n/,`find $path -type d`);
-    my @files = split(/\n/, `find $path -type f`);
-    return (\@files, \@dirs);
+    my @dirs  = split( /\n/, `find $path -type d` );
+    my @files = split( /\n/, `find $path -type f` );
+    return ( \@files, \@dirs );
 }
 
 sub remove_world_write {
